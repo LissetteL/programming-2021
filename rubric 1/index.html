@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+
+<h3>Rubric 1 - Basics</h3>
+<a href="link.html"> <p>Click to go to another page</p></a>
+<button onclick="myFunction()">Try me</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+      let text;
+      let person = prompt("Please enter your name:");
+      if (person == null || person == "") {
+        text = "User cancelled the prompt.";
+      } else {
+        text = "Hello " + person + "! How are you today?";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+
+
+
+</body>
+</html>

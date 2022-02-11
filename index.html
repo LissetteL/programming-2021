@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Rubric 4</title>
+</head>
+<body onload="myFunction()">
+  
+  <script>
+  function myFunction() {
+    alert("Page is loaded");
+  }
+  </script>
+  
+  
+  <h2 id="hi">Hello World!</h2>
+
+<script>
+document.getElementById("hi").onmouseover = function() {mouseOver()};
+document.getElementById("hi").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("hi").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("hi").style.color = "black";
+}
+</script>
+  
+  
+
+<p id="demo">Click me.</p>
+
+<script>
+  document.getElementById("demo").onclick = function() {newFunction()};
+  
+  function newFunction() {
+    document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+  }
+  </script>
+
+</body>
+</html>
